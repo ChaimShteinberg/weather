@@ -1,0 +1,77 @@
+* {
+  color: white;
+  font-family: "Segoe UI";
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 0 50px;
+}
+
+header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  justify-content: center;
+  gap: 20px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.1);
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 30px;
+  border: 1px solid rgb(34 34 34 / 20%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+section:hover{
+    animation: bounce 1s forwards;
+}
+
+button {
+  background: linear-gradient(45deg, #ff6b6b, #ffa726);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+}
+button:hover{
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+}
+
+.icon {
+  animation: bounce 2s infinite alternate-reverse;
+  display: inline-block;
+}
+
+#icon_snow {
+  animation: Rotary 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes Rotary {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
